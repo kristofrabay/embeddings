@@ -2,6 +2,7 @@
 
 In this project I'm exploring some NLP techniques. 
 1. Document similarity (use case: recommend movies)
+2. Visualization of meaning of words using t-SNE or PCA
 2. Text classification using pretrained word vectors (use case: article labeling)
 
 I'm using Google's pretrained word2vec model that contains 3 million words.
@@ -12,6 +13,15 @@ Calculating cosine similarity between vectors:
 - CountVectorizer and TfidfVectorizer
 - word2vec word embeddings aggregated to sentence vectors
 - doc2vec (todo)
+
+## Word meaning visualization
+
+Using t-SNE we can reduce dimensionality without crowding problem, and visualize our words / sentences in 2D space. I chose some words to put on the map:
+
+
+<img src='https://raw.githubusercontent.com/kristofrabay/embeddings/main/tsne_word2vec.PNG' width=400>
+
+
 
 ## Text classification
 
@@ -33,4 +43,4 @@ biLSTM model's confusion matrix:
          2 = medicine              8            2          185
 
 
-<img src='https://www.i2tutorials.com/wp-content/media/2019/05/Deep-Dive-into-Bidirectional-LSTM-i2tutorials.jpg' width=400>
+<img src='https://www.i2tutorials.com/wp-content/media/2019/05/Deep-Dive-into-Bidirectional-LSTM-i2tutorials.jpg' width=450>
